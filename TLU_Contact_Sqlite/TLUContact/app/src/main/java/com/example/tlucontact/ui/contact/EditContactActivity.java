@@ -44,7 +44,6 @@ public class EditContactActivity extends AppCompatActivity {
             finish();
             return;
         }
-
         // Đổ dữ liệu lên UI
         etName.setText(contact.getName());
         etPosition.setText(contact.getPosition());

@@ -11,22 +11,21 @@
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="vertical">
-
         <ImageView
-            android:id="@+id/logo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/logo" />
-
+            android:layout_width="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+        </ImageView>
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:text="TLU Contact"
+            android:text="Danh bạ Thủy Lợi"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -42,7 +41,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:drawableStart="@drawable/ic_department"
                 android:text="Danh bạ đơn vị"
+                android:backgroundTint="@color/teal_700"
                 app:cornerRadius="5dp" />
 
             <Button
@@ -51,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Danh bạ CBNV"
+                android:backgroundTint="@color/teal_700"
                 app:cornerRadius="5dp" />
         </LinearLayout>
     </LinearLayout>

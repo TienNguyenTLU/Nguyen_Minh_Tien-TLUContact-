@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:com.google.android.material="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,101 +12,103 @@
         android:text="Thêm Liên Hệ"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp"/>
 
+    <!-- Tên -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tlName"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="Tên">
+        android:layout_marginTop="8dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:hint="Tên"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Chức vụ -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tlPosition"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Chức vụ">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPosition"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:hint="Chức vụ"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Số điện thoại -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tlPhone"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Số điện thoại">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
             android:inputType="phone"/>
-
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Email -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tlEmail"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Email">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Email"
             android:inputType="textEmailAddress"/>
-
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Phòng ban -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tlDepartment"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Phòng ban">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDepartment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:hint="Phòng ban"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Nút Lưu -->
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/light_blue"
         android:text="Lưu"
-        com.google.android.material:cornerRadius="5dp" />
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"/>
 
+    <!-- Nút Quay lại -->
     <Button
         android:id="@+id/btnCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/light_blue"
         android:text="Quay lại"
-        android:textColor="@android:color/white"
-        com.google.android.material:cornerRadius="5dp" />
-
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/white"/>
 </LinearLayout>

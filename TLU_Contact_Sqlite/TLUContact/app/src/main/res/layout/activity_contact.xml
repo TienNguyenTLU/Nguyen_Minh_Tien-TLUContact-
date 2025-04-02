@@ -30,10 +30,11 @@
 
     <Button
         android:id="@+id/btnAddContact"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="@drawable/baseline_add_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="end"
+        android:backgroundTint="@color/teal_700"
+        android:text="Thêm CBNV"
         android:layout_marginTop="8dp" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -48,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@android:color/darker_gray"
         android:gravity="center"
         android:text="Quay lại"
         android:textColor="@android:color/white"

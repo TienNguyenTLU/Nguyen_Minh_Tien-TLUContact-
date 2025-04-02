@@ -4,28 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/white">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Thêm Phòng Ban"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_gravity="center_horizontal"/>
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tlDepartmentName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
         android:hint="Tên phòng ban">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDepartmentName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -34,6 +37,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
         android:hint="Số điện thoại">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -49,12 +53,13 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:hint="Địa chỉ">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDepartmentAddress"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,17 +67,17 @@
         android:id="@+id/btnSaveDepartment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/light_blue"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/teal_700"
         android:text="Lưu"
-        com.google.android.material:cornerRadius="5dp" />
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btnCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@android:color/darker_gray"
         android:text="Quay lại"
-        android:textColor="@android:color/white"
-        com.google.android.material:cornerRadius="5dp" />
+        android:textColor="@android:color/white" />
+
 </LinearLayout>

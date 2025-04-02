@@ -5,22 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="20dp"
+    android:gravity="center_horizontal">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sửa liên hệ"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_gravity="center_horizontal" />
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tlName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập tên liên hệ">
+        android:hint="Nhập tên liên hệ"
+        android:layout_marginBottom="12dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtName"
@@ -34,7 +37,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập chức vụ">
+        android:hint="Nhập chức vụ"
+        android:layout_marginBottom="12dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtPosition"
@@ -48,7 +52,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập số điện thoại">
+        android:hint="Nhập số điện thoại"
+        android:layout_marginBottom="12dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtPhone"
@@ -63,7 +68,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập email">
+        android:hint="Nhập email"
+        android:layout_marginBottom="12dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtEmail"
@@ -78,7 +84,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập phòng ban">
+        android:hint="Nhập phòng ban"
+        android:layout_marginBottom="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtDepartment"
@@ -91,17 +98,19 @@
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@color/teal_700"
         android:text="Cập nhật"
-        app:cornerRadius="5dp" />
+        android:textColor="@android:color/white"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:id="@+id/btnCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@android:color/darker_gray"
         android:text="Quay lại"
         android:textColor="@android:color/white"
-        app:cornerRadius="5dp" />
+        app:cornerRadius="8dp" />
 
 </LinearLayout>
